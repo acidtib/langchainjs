@@ -72,6 +72,8 @@ export class OpenAIEmbeddings
       Partial<AzureOpenAIInput> & {
         verbose?: boolean;
         openAIApiKey?: string;
+      } & {
+        configuration?: ClientOptions & LegacyOpenAIInput;
       },
     configuration?: ClientOptions & LegacyOpenAIInput
   ) {
